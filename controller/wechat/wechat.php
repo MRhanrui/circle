@@ -68,8 +68,8 @@ class wechat extends db
         $stmt->bindValue(4, $_GET['content']);
         $stmt->bindValue(5, '太原.学府街');
         $stmt->bindValue(6, $_GET['image']);
-
-        echo $stmt->execute();
+        $stmt->execute();
+        echo $openid;
     }
 
 //
