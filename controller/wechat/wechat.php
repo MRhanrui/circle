@@ -66,7 +66,7 @@ class wechat extends db
         $stmt->bindValue(2, $_GET['name']);
         $stmt->bindValue(3, $_GET['avatar']);
         $stmt->bindValue(4, $_GET['content']);
-        $stmt->bindValue(5, '太原.学府街');
+        $stmt->bindValue(5, $_GET['address']);
         $stmt->bindValue(6, $_GET['image']);
         $stmt->execute();
         echo $openid;
